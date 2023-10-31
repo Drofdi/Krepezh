@@ -1,0 +1,143 @@
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0px 5px 11px -10px rgba(34, 60, 80, 0.6);
+
+
+    &__container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__firstRow{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo{
+        width: 60px;
+        height: 60px;
+    }
+
+    &__searchBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $searchBackColor;
+        height: 35px;
+        border-radius: 18px;
+        box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+    }
+
+    &__searchTxt{
+        width: 300px;
+        font-size: 14px;
+        margin-left: 10px;
+        border: none;
+        background: inherit;
+        font-family: $mainFont;
+        &::placeholder {
+            color: rgb(85, 85, 85); 
+          }
+
+        &:focus {
+            color: rgb(0, 0, 0);
+            outline: none; 
+          }
+    }
+
+
+    &__searchBtn{
+        background: none;
+        border: none;
+        margin-right: 10px;
+        i{
+            font-size: 25px;
+            color: rgb(85, 85, 85); 
+        }
+    }
+
+    &__info{
+        display: flex;
+        i{
+            font-size: 20px;
+            margin-right: 3px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+
+        }
+    }
+
+    .infoItem{
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        margin-left: 8px;
+        border-left: 1px solid rgba(0, 0, 0, 0.274);
+        padding-left: 8px;
+        transition: color 0.3s;
+
+        &:hover{
+            color: rgb(168, 165, 0);
+        }
+    }
+
+    .infoItem:first-child{
+        border-left: none;
+    }
+
+    &__navigation{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-color: $mainColor;
+        font-weight: 500;
+        font-size: 18px;
+    }
+}
+
+
+
+.navigation{
+
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    &__item{
+        flex: 1;
+        border-left: 1px solid $borderColor;
+        transition: .3s;
+    }
+
+    &__item:last-child{
+        border-right: 1px solid $borderColor;
+    }
+
+    &__item:hover{
+        background-color: $hoverColor;
+
+    }
+
+    &__link{
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        margin: 8px 0 8px 0;
+        color: black;
+        transition: .3s;
+
+        &:hover{
+            color: black;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+@import "style/fonts";
+@import "style/colors";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import "style/container";
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $mainFont;
+}
+
+@import "style/header";
+@import "style/main";
+@import "style/footer"
