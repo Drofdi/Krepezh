@@ -15,6 +15,12 @@
   /*     border: 1px solid black */
 }
 
+.generalAlignment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -294,25 +300,36 @@
 }
 .footer__container {
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .footer .footerText {
-  margin: 10px 0 10px 0;
   font-size: 16px;
 }
 .footer__info {
   display: flex;
   justify-content: space-around;
+  width: 100%;
+}
+.footer__copyright {
+  margin: 15px 0 15px 0;
+}
+.footer__number {
+  margin: 15px 0 15px 0;
 }
 .footer__social {
   display: flex;
   justify-content: center;
+  width: 73%;
+  border-top: 3px solid rgb(236, 236, 49);
 }
 .footer__social a {
   display: flex;
   align-items: center;
   text-decoration: none;
   color: white;
-  margin-left: 10px;
+  margin: 15px 0 15px 10px;
   border-left: 2px solid white;
   transition: 0.3s;
 }
@@ -326,4 +343,85 @@
   font-size: 20px;
   margin-right: 5px;
   padding-left: 10px;
+}
+
+.aboutUs__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+.aboutUs__title {
+  font-size: 35px;
+  margin: 20px 0 0 0;
+  font-weight: 300;
+}
+.aboutUs__items {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.item {
+  border-top: 1px solid rgb(255, 255, 53);
+  margin: 30px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item .itemImg {
+  width: 350px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px 0px rgba(34, 60, 80, 0.2);
+  margin-top: 30px;
+}
+.item__img2 {
+  margin-right: 25px;
+}
+.item__img1 {
+  margin-left: 25px;
+}
+.item__info {
+  width: 60%;
+}
+.item__title {
+  font-weight: 400;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+  text-decoration: underline 2px rgb(236, 236, 49);
+}
+.item__text {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.contacts__container {
+  min-height: 90vh;
+}
+.contacts__title {
+  font-size: 35px;
+  margin: 20px 0 0 0;
+  font-weight: 300;
+}
+.contacts__map {
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  margin: 20px 0 25px 0;
+}
+.contacts__info {
+  display: block;
+  width: 600px;
+  font-size: 20px;
+  font-weight: 500;
+  border-left: 3px solid rgb(255, 255, 53);
+  margin-bottom: 25px;
+}
+.contacts__info a {
+  text-decoration: none;
+  color: black;
+}
+.contacts__info div {
+  margin: 20px 0 0 20px;
+}
+.contacts__info div:first-child {
+  margin-top: 0;
 }
