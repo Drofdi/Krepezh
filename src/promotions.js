@@ -1,1 +1,2 @@
-alert('poromo')
+import './promotions.html'
+import './style.scss'

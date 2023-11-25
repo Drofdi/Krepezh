@@ -3,9 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Крепеж Акции</title>
+    <title>Крепеж - Контакты</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    Акции
+<div class="wrapper">
+
+    <header class="header">
+        <div class="header__container">
+            <div class="header__firstRow _container">
+                <img class="header__logo" src="img/test.jpg" alt="logo">
+
+                <form class="header__searchBox"> 
+                    <input type="text" name=text" class="header__searchTxt" placeholder="Поиск по каталогу">
+                    <button class="header__searchBtn "><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <div class="header__info">
+                        <a href="google.com" class="header__mail infoItem"> <i class="fa-solid fa-envelope"></i> krepezh557337@gmail.com </a>
+                        <a href="https://vk.com/krepeg_syktyvkar" class="header__social infoItem"> <i class="fa-brands fa-vk"></i> Группа ВК  </a>
+                        <a href="google.com" class="header__address infoItem"> <i class="fa-solid fa-location-dot"></i> Сыктывкар, ул. Морозова 202  </a>
+                        <a href="google.com" class="header__phone infoItem"> <i class="fa-solid fa-phone"></i> +7 821 255-73-37</a>
+                </div>
+            </div>
+
+            <nav class="header__navigation navigation">
+                <div class="header__navigationContainer _container">
+                    <ul class="navigation__list">
+                        <li class="navigation__item"><a href="index.html" class="navigation__link">Главная</a></li>
+                        <li class="navigation__item"><a href="catalogMain.html" class="navigation__link">Каталог</a></li>
+                        <li class="navigation__item"><a href="promotions.html" class="navigation__link">Новости и акции</a></li>
+                        <li class="navigation__item"><a href="about.html" class="navigation__link">О нас</a></li>
+                        <li class="navigation__item"><a href="contacts.html" class="navigation__link">Контакты</a></li>
+                    </ul>
+            </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="promo">
+        <div class="promo__container _container generalAlignment">
+            <div class="promo__title mainTitle">
+                Важные события
+            </div>
+
+            <section class="promo__items itemPromo">
+                <article class="itemPromo__item">
+                    <img class="itemPromo__img" src="img/aboutUsPhoto.jpg" alt="">
+                    <div class="itemPromo__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore deleniti minus dolores ipsam omnis fugiat eius eveniet, quos quam debitis nesciunt quisquam perferendis hic quae blanditiis voluptate quis! Error sint tempore voluptates, molestias obcaecati minus?</div>
+                </article>
+                <article class="itemPromo__item">
+                    <img class="itemPromo__img" src="img/test.jpg" alt="">
+                    <div class="itemPromo__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit exercitationem temporibus adipisci ad, necessitatibus laboriosam at voluptatum optio eaque mollitia, commodi ab sit deserunt, neque ut sequi fugit ducimus voluptate! Doloremque earum voluptatum voluptates deleniti.</div>
+                </article>
+                <article class="itemPromo__item">
+                    <img class="itemPromo__img" src="img/test.jpg" alt="">
+                    <div class="itemPromo__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt voluptas vitae incidunt laborum, numquam sed, sunt magnam similique totam ratione expedita non dolores distinctio officiis, in inventore iure aperiam itaque at exercitationem dicta. Aliquid, blanditiis?</div>
+                </article>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container _container">
+            <div class="footer__info">
+                <span class="footer__copyright footerText">
+                    Крепеж, г. Сыктывкар, 2023
+                </span>
+                <span class="footer__number footerText">
+                    +7 821 255-73-37
+                </span>
+            </div>
+            <div class="footer__social footerText">
+                <a href="google.com" class="header__mail"> <i class="fa-solid fa-envelope"></i> krepezh557337@gmail.com </a>
+                <a href="https://vk.com/krepeg_syktyvkar" class="header__social"> <i class="fa-brands fa-vk"></i> Группа ВК  </a>
+                <a href="google.com" class="header__address"> <i class="fa-solid fa-location-dot"></i> Сыктывкар, ул. Морозова 202 </a>
+            </div>
+        </div>
+    </footer>
+
+
+</div>
 </body>
 </html>

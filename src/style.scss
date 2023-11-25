@@ -20,39 +20,55 @@
 @import "style/main";
 @import "style/footer";
 @import "style/about";
+@import "style/contacts";
+@import "style/promotions";
 
-.contacts{
+.catalogMain{
     &__container{
-        min-height: 90vh;
+        min-height: 80vh;
     }
 
+    &__items{
+        margin-bottom: 50px;
+    }
+
+    &__item{
+        background-color: $mainColor;
+        &:hover{
+            background-color: $hoverColor;
+        }
+    }
+    
     &__title{
-        font-size: 35px;
-        margin: 20px 0 0 0;
-        font-weight: 300;
+        border-top: 2px solid rgb(223, 226, 20)
     }
 
-    &__map{
-        box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
-        margin: 20px 0 25px 0;
-    }
+    &__button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+        width: 250px;
+        height: 50px;
+        box-shadow: $buttonShadow;
+        background-color: $mainColor;
+        border: 1px solid $borderColor;
+        border-radius: 10px;
+        font-family: $mainFont;
+        font-size: 18px;
+        font-weight: 700;
+        transition: .3s;
 
-    &__info{
-        display:block;
-        width: 600px;
-        font-size: 20px;
-        font-weight: 500;
-        border-left: 3px solid $mainColor;
-        margin-bottom: 25px;
-        a{
-            text-decoration: none;
-            color: black;
+        &:hover{
+            background-color: $hoverColor;
+            border: 1px solid $hoverBorderColor;
         }
-        div{
-            margin: 20px 0 0 20px;
-        }
-        div:first-child{
-            margin-top: 0;
+
+        i{
+            margin-left: 6px;
+            font-size: 20px;
+            margin-top: 2.3px;
         }
     }
 }
+

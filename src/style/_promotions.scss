@@ -1,0 +1,33 @@
+.promo {
+    &__container{
+        min-height: 80vh;
+    }
+
+    &__items{
+        width: 100%;
+        margin: 20px 0 0 0;
+        font-size: 23px;
+    }
+}
+
+.itemPromo{
+    &__item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top: 3px solid $mainColor;
+    }
+    
+    &__img{
+        height: 200px;
+    }
+
+    &__text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 200px;
+        width: 60%;
+        margin: 20px 0 20px 20px;
+    }
+}
