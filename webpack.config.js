@@ -10,6 +10,7 @@ module.exports = {
       about: './src/about.js',
       contacts: './src/contacts.js',
       promotions: './src/promotions.js',
+      catalogItems: './src/catalogItems.js',
     },
     output: {
        filename: 'bundle.[contenthash].js',
@@ -43,6 +44,11 @@ module.exports = {
         filename: 'promotions.html',
         chunks: ['promotions'],
       }),
+      new HtmlWebpackPlugin({
+        template: path.resolve(__dirname, 'src', 'catalogItems.html'),
+        filename: 'catalogItems.html',
+        chunks: ['catalogItems'],
+      }),  
         new MiniCssExtractPlugin({
             filename: '[name].css',
 /*             filename: '[name].[contenthash].css', */ //dont work, error MIMO

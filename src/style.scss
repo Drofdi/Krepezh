@@ -22,53 +22,6 @@
 @import "style/about";
 @import "style/contacts";
 @import "style/promotions";
+@import "style/catalogMain"
 
-.catalogMain{
-    &__container{
-        min-height: 80vh;
-    }
-
-    &__items{
-        margin-bottom: 50px;
-    }
-
-    &__item{
-        background-color: $mainColor;
-        &:hover{
-            background-color: $hoverColor;
-        }
-    }
-    
-    &__title{
-        border-top: 2px solid rgb(223, 226, 20)
-    }
-
-    &__button{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 40px;
-        width: 250px;
-        height: 50px;
-        box-shadow: $buttonShadow;
-        background-color: $mainColor;
-        border: 1px solid $borderColor;
-        border-radius: 10px;
-        font-family: $mainFont;
-        font-size: 18px;
-        font-weight: 700;
-        transition: .3s;
-
-        &:hover{
-            background-color: $hoverColor;
-            border: 1px solid $hoverBorderColor;
-        }
-
-        i{
-            margin-left: 6px;
-            font-size: 20px;
-            margin-top: 2.3px;
-        }
-    }
-}
 

@@ -129,10 +129,12 @@
     }
 
     &__link{
+        height: 100%;
         display: flex;
         justify-content: center;
+        align-items: center;
         text-decoration: none;
-        margin: 8px 0 8px 0;
+        margin: 0 0 16px 0;
         color: black;
         transition: .3s;
 

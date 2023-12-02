@@ -13,7 +13,7 @@
     &__item{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         margin-top: 40px;
         width: 300px;
@@ -24,16 +24,21 @@
         transition: .3s;
 
         &:hover{
-            box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 1) inset;
+            box-shadow: 0px 0px 4px 3px rgb(221, 218, 39) inset;
             cursor: pointer;
+
+            .category__title{
+                border-top: 2px solid rgb(221, 218, 39, .8);
+                box-shadow: 0px 0px 4px 0px rgb(221, 218, 39) inset;
+            }
         }
     }
 
     &__img{
-        width: 200px;
-        height: 200px;
-/*         border: 2px solid white; */
+        width: 210px;
+        height: 210px;
         border-radius: 20px;
+        margin-top: 21px;
     }
 
     &__title{
@@ -41,12 +46,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 10px;
         border-top: 2px solid $hoverColor;
+        border-radius: 0 0 20px 20px;
+        transition: .3s;
         &Link{
             font-weight: 500;
-            margin-top: 13px;
-            font-size: 25px;
+            margin: 7px 0 10px 0;
+            font-size: 23px;
             color: black;
             text-decoration: none;
         }
@@ -54,7 +60,7 @@
 }
 
 .mainTitle{
-    font-size: 35px;
-    margin: 20px 0 0 0;
+    font-size: 32px;
+    margin: 25px 0 0 0;
     font-weight: 300;
 }

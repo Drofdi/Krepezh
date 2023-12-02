@@ -1,0 +1,59 @@
+.catalogMain{
+    &__container{
+        min-height: 80vh;
+    }
+
+    &__mainTitle{
+        margin-bottom: -15px;
+    }
+
+    &__items{
+        margin-bottom: 50px;
+    }
+
+    &__item{
+        box-shadow: 0px 0px 8px 0px rgba(223, 226, 20, 1) inset;
+        &:hover{
+
+            .catalogMain__title{
+                box-shadow: 0px 0px 4px 3px rgb(221, 218, 39) inset;
+                background-color: $hoverColor;
+            }
+        }
+    }
+    
+    &__title{
+        background-color: $mainColor;
+        border-top: 2px solid rgb(223, 226, 20, 0.4);
+        box-shadow: 0px 0px 8px 0px rgba(223, 226, 20, 1) inset;
+        border-radius: 0 20px 0 20px;
+    }
+
+    &__button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+        width: 250px;
+        height: 50px;
+        box-shadow: $buttonShadow;
+        background-color: $mainColor;
+        border: 1px solid $borderColor;
+        border-radius: 10px;
+        font-family: $mainFont;
+        font-size: 18px;
+        font-weight: 700;
+        transition: .3s;
+
+        &:hover{
+            background-color: $hoverColor;
+            border: 1px solid $hoverBorderColor;
+        }
+
+        i{
+            margin-left: 6px;
+            font-size: 20px;
+            margin-top: 2.3px;
+        }
+    }
+}

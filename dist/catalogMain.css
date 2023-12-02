@@ -30,7 +30,7 @@
 .category__item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-top: 40px;
   width: 300px;
@@ -41,34 +41,39 @@
   transition: 0.3s;
 }
 .category__item:hover {
-  box-shadow: 0px 0px 4px 0px rgb(0, 0, 0) inset;
+  box-shadow: 0px 0px 4px 3px rgb(221, 218, 39) inset;
   cursor: pointer;
 }
+.category__item:hover .category__title {
+  border-top: 2px solid rgba(221, 218, 39, 0.8);
+  box-shadow: 0px 0px 4px 0px rgb(221, 218, 39) inset;
+}
 .category__img {
-  width: 200px;
-  height: 200px;
-  /*         border: 2px solid white; */
+  width: 210px;
+  height: 210px;
   border-radius: 20px;
+  margin-top: 21px;
 }
 .category__title {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
   border-top: 2px solid rgb(236, 236, 49);
+  border-radius: 0 0 20px 20px;
+  transition: 0.3s;
 }
 .category__titleLink {
   font-weight: 500;
-  margin-top: 13px;
-  font-size: 25px;
+  margin: 7px 0 10px 0;
+  font-size: 23px;
   color: black;
   text-decoration: none;
 }
 
 .mainTitle {
-  font-size: 35px;
-  margin: 20px 0 0 0;
+  font-size: 32px;
+  margin: 25px 0 0 0;
   font-weight: 300;
 }
 
@@ -186,10 +191,12 @@
   background-color: rgb(236, 236, 49);
 }
 .navigation__link {
+  height: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   text-decoration: none;
-  margin: 8px 0 8px 0;
+  margin: 0 0 16px 0;
   color: black;
   transition: 0.3s;
 }
@@ -454,17 +461,24 @@
 .catalogMain__container {
   min-height: 80vh;
 }
+.catalogMain__mainTitle {
+  margin-bottom: -15px;
+}
 .catalogMain__items {
   margin-bottom: 50px;
 }
 .catalogMain__item {
-  background-color: rgb(255, 255, 53);
+  box-shadow: 0px 0px 8px 0px rgb(223, 226, 20) inset;
 }
-.catalogMain__item:hover {
+.catalogMain__item:hover .catalogMain__title {
+  box-shadow: 0px 0px 4px 3px rgb(221, 218, 39) inset;
   background-color: rgb(236, 236, 49);
 }
 .catalogMain__title {
-  border-top: 2px solid rgb(223, 226, 20);
+  background-color: rgb(255, 255, 53);
+  border-top: 2px solid rgba(223, 226, 20, 0.4);
+  box-shadow: 0px 0px 8px 0px rgb(223, 226, 20) inset;
+  border-radius: 0 20px 0 20px;
 }
 .catalogMain__button {
   display: flex;
